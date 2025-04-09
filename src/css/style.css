@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: "Poppins", sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #497e87;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#principal{
+    /* border: 4px solid black; */
+    width: 990px;
+    height:555px ;
+    display: flex;
+    border-radius: 16px;
+    
+    
+  
+}
+/*RETIRAR A BORDA DOS ELEMENTOS FILHOS APOS A CONLCUSÃO*/
+/* .box_lado_esquerdo, .box_lado_direito{
+    border: 3px solid black;
+}
+ */
+
+ /*Estilo caixa da Esquerda*/
+.box_lado_esquerdo{
+    background-color:#36320a ;
+    width: 409px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-sizing: content-box;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.box_lado_esquerdo  img {
+    margin-left: 38px;
+    border-left: 3px solid #c4c4c4;
+    padding: 1px;
+    border-width: 6px;
+    
+}
+
+.box_lado_esquerdo h3{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 26px;
+}
+.box_lado_esquerdo p {
+    color: #fff;
+    margin-left: 35px;
+    text-align: justify,
+    
+}
+.left_cima{
+  /*   border: 1px solid #fff; */
+    height: 300px;
+     margin-top: 50px;
+     align-content: center;
+     padding-top: 100px;
+     
+}
+.left_baixo{
+    /* border: 1px solid #fff; */
+    height: 150px;
+    padding-top: 40px;
+    
+}
+.left_baixo, .entrar{
+    display: block;
+}
+.entrar{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: 4px solid #ffffff;
+    border-radius: 25px;
+    padding: 13px;
+    width: 200px;
+    margin: 0 auto;    
+
+}
+.esqueci{
+    display: block;
+    text-transform: capitalize;
+    padding-top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+   
+
+/* img{
+    border-left: 3px solid #c4c4c4;
+    padding: 1px;
+} */
+
+img:hover{
+    border: 3px solid #2cc2dd;
+}
+
+.entrar:hover{
+    text-decoration: underline 2px #2cc2dd;
+}
+.esqueci:hover{
+    text-decoration: underline 2px #2cc2dd;
+}
+
+
+/*Estilo caixa da Direita*/
+.box_lado_direito{
+    
+    background: rgba(254, 250, 161, 1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+   
+    
+}
+
+
+
+.right_cima{
+    width: 400px;
+    height: 80px;
+   /*  margin-bottom: 50px; */
+    padding-top: 40px;
+    text-align: center;
+}
+
+.right_cima > span{
+    font-weight: 450;
+}
+
+.right_baixo{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:5;
+    
+  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+input{
+    width: 480px;
+    height: 60px;
+    margin-top: 20px;
+    background-color: #E2CE1A;
+    border-radius: 15px;
+    border: none;
+ }
+button{
+    margin-top: 25px;
+    
+    width: 222px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: #36320A;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+    
+}
+
+input::placeholder{
+    font-size:23px ;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 20px;
+
+}
+
+input:hover{
+    border-color:3px solid #2cc2dd;
+}
+
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+button:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
